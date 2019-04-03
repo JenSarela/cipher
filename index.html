@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cipher Text</title>
+</head>
+<body> 
+    
+<!--Bienvenida y definición-->
+
+           <div>
+             <h1>Bienvenida al Oppa text</h1>
+              <h2>¡Descubre tus nuevos mensajes secretos!</h2>
+            <p>El Oppa Text es una aplicación que podrás utilizar para crear contraseñas, mensajes privados</p>
+            <p>entre tus amigas acerca de tus Idols y Oppas favoritos.</p>
+            <p>Esta aplicación usa un código que fue creado por Julio César</p>
+            <p>el cual es uno de los primeros cifrados conocidos históricamente</p>
+           
+            </div>  
+                    
+               <h4>Crea contraseñas y mensajes para tus Idols</h4>
+        
+                
+          <!--Ingreso del Nombre de usuario y guardarlo-->
+        
+                  <div id="inicio" class="screen">  
+               <h3>Ingresa Tu nombre</h3>    
+                    <div class="container">
+                  <input type="text" id="user" placeholder= "Ingresa tu nombre">
+                  <button class="button" onclick="saveName()">Start</button>
+                   </div>
+            </div>
+                 <div id="inicio" class="pantalla">
+                   <h4>Hola <span id="nickName"></span>!</h4>
+
+                 </div>
+        </form>   
+        
+        <!--seleccion de offset-->
+        <h3>Escribe aquí tu número de desplazamiento</h3>
+   
+       <div id= "ingresar_numero">
+               <form id="desplazamiento">
+                   <input type="text" id ="numero" name="escribir" placeholder="Ingresar numero">
+                   <input type="submit" value="enviar" id="send"/>
+                   </form>
+       </div>
+       
+            
+        <!--Ingresar Texto a codificar o decodificar-->
+        <p>Comencemos!</p>
+       <h3>Ingresa tu texto</h3>
+       
+       
+       <form id= "write">
+               <input type="text" id="texto" name= "ingresar" placeholder= "Ingresa texto">
+               <input type="hidden" id="actual1" value="text1">
+               <input type="submit" value="enviar" id="send1"/>
+           
+           </form>
+       </div>
+      <!--elegir que se va a realizar cifrado o descifrado-->
+         <h3>Selecciona la opción</h3>  
+       <div id= "seleccion">
+           <form id="categoria">
+               <input type="text" size="35">
+               <input type="button" id="category" name="encode" value="Cifrar">
+               <input type="button" id="category" name="decode" value="Descifrar">
+   
+           </form>
+       </div>
+        <!--seccion resultado del codigo-->
+       <h3>Resultado código</h3>
+       <div id="respuesta">
+           <form action="cuadro de texto">
+               <input type="text" id="answer" name="result" placeholder="">
+           </form>
+   
+       </div>
+          
+    <script src="index.js"></script>
+ </body>   
+
+ </html>
